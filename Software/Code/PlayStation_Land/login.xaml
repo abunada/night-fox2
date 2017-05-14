@@ -1,0 +1,75 @@
+﻿<Window x:Class="login"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="login" Height="459" Width="600" WindowStyle="None" 
+    AllowsTransparency="True" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Window.Background>
+        <ImageBrush   ImageSource="Resources/Loginn.png" Stretch="Uniform"  />
+            
+    </Window.Background>
+    <Grid ShowGridLines="False" HorizontalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="12" HorizontalAlignment="Center" Orientation="Horizontal">
+            <TextBlock FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#0a3161" FontFamily="/PlayStation_Land;component/Resources/#CoreSansMW01-45Regular" FontWeight="Bold" Text="Username"></TextBlock>
+            <TextBox x:Name="UserName"  HorizontalAlignment="Center"   Width="200" MaxWidth="150" Margin="20,0,0,0" Height="30" BorderThickness="0" BorderBrush="{x:Null}"  Foreground="#FFF2F8FF" Grid.IsSharedSizeScope="True" FontFamily="/PlayStation_Land;component/Resources/#CoreSansMW01-45Regular" FontSize="18" VerticalContentAlignment="Center" Padding="5,1">
+                <TextBox.Background>
+                    <ImageBrush ImageSource="Resources/Field.png"/>
+                </TextBox.Background>
+            </TextBox>
+
+        </StackPanel>
+        <StackPanel Grid.Row="14" HorizontalAlignment="Center" Orientation="Horizontal">
+            <TextBlock    FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"  Foreground="#0a3161" FontFamily="/PlayStation_Land;component/Resources/#CoreSansMW01-45Regular" FontWeight="Bold" Margin="0,3" Text="Password "></TextBlock>
+            <PasswordBox x:Name="Password" HorizontalAlignment="Center"   Width="150" MaxWidth="150" Margin="20,0,0,0" Height="30" BorderThickness="0" BorderBrush="{x:Null}"  Foreground="#FFF2F8FF" Grid.IsSharedSizeScope="True" FontFamily="/PlayStation_Land;component/Resources/#CoreSansMW01-45Regular" FontSize="18" VerticalContentAlignment="Center" Padding="5,1">
+                <PasswordBox.Background>
+                    <ImageBrush ImageSource="Resources/Field.png"/>
+                </PasswordBox.Background>
+            </PasswordBox>
+
+        </StackPanel>
+        <StackPanel    Grid.Row="7" Orientation="Horizontal" HorizontalAlignment="Stretch" Grid.RowSpan="4" Margin="-47,0,-61,4"   >
+            <StackPanel.Background>
+                <ImageBrush ImageSource="Resources/Login_Logo.png"/>
+            </StackPanel.Background>
+        </StackPanel>
+        <Button  Content="Log In" Grid.Row="17" VerticalAlignment="Top" Height="31" Margin="0,0,10,0" Grid.RowSpan="2" Width="259" FontFamily="/PlayStation_Land;component/Resources/#CoreSansMW01-45Regular" FontSize="18" FontWeight="Bold" Click="Button_Click_1">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="134,0" MappingMode="Absolute" StartPoint="134,30">
+                    <GradientStop Color="#FF79BAE9"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label x:Name="WrongLabel" Content="Wrong Username or Passowrd" Foreground="Red" Width="Auto" Grid.Row="15" FontWeight="Bold" FontSize="18" FontFamily="/PlayStation_Land;component/Resources/#CoreSansMW01-45Regular" Visibility="Hidden"></Label>
+    </Grid>
+    
+</Window>
